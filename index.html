@@ -93,15 +93,14 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>生年月日:</strong> <span>1996年07月13日</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://ravi2301-collab.github.io/newportfolio/</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>連絡先</strong> <span>070 2402 5191</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>国籍</strong> <span>ネパール</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>年齢</strong> <span>27</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>学歴</strong> <span>大学生</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>年齢</strong> <span id="age"></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>学歴</strong> <span>大学院</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>メール</strong> <span>ravimansingh1234@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>言語</strong> <span>英語、日本語、ネパール語</span></li>
                 </ul>
@@ -202,7 +201,6 @@
             <div class="resume-item pb-0">
               <h4>シンラヴィマン</h4>
               <ul>
-                <li>江戸川区中葛西３−１９−２９</li>
                 <li>ravimansingh1234@gmail.com</li>
               </ul>
             </div>
@@ -234,7 +232,7 @@
           
             <div class="resume-item">
               <h4>株式会社bridge life</h4>
-              <h5>2023 - 現在</h5>
+              <h5>2023 - 2025</h5>
               <p>アルバイト</p>
               <p><em>コールセンタースタッフ</em></p>
               <ul>
@@ -247,7 +245,7 @@
               <h4>株式会社ビークルーエッセ</h4>
               <h5>2020- 2023</h5>
               <p>正社員</p>
-              <p><em>システムエンジニア</em></p>
+              <p><em>正社員</em></p>
               <ul>
                 <li><strong> システム開発： </strong> 成績システム、chromeプラグイン等の開発</li>
                 <li><strong> 自動化作業：</strong>RPAを利用して、手作業の自動化</li>
@@ -293,6 +291,18 @@
               </div>
             </div>
           </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-javascript">
+            <div class="portfolio-wrap">
+              <img src="assets/img/kaitori.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/kaitori.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="買取サイトです。"><i class="bx bx-plus"></i></a>
+                <a href="https://wagokoro-kaitori.great-site.net/" class="click-detail" title="More Details"><i class="bx bx-link"></i></a>
+                <p class="projectdetail"> project detail</p>
+              </div>
+            </div>
+          </div>
+
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
@@ -442,9 +452,18 @@
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
+  <script>
+    var agecontainer = document.getElementById("age");
+    var date = new Date();
+    var currentage = 0;
+    if (date.getMonth() + 1 >= 7 && date.getDate() >= 13) {
+      currentage = date.getFullYear() - 1996
+    } else (
+      currentage = date.getFullYear() - 1996 - 1
+    )
+    agecontainer.innerHTML = currentage;
 
-
-  
+  </script>
 
   <script src="assets/js/main.js"></script>
   
